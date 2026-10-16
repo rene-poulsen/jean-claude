@@ -1,0 +1,13 @@
+{
+  "name": "4k-website-recording",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Scripted, frame-perfect 4K website recordings",
+  "scripts": {
+    "record": "node record.js",
+    "pick": "node pick.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.63.0"
+  }
+}

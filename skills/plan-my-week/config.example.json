@@ -1,0 +1,22 @@
+{
+  "workbook": {
+    "baseUrl": "https://yourcompany.workbook.net"
+  },
+  "outlook": {
+    "store": "you@yourcompany.com",
+    "category": "Workbook",
+    "ignoreSubjects": []
+  },
+  "planning": {
+    "days": [
+      { "day": "Mon", "start": "08:00", "hours": 7.5 },
+      { "day": "Tue", "start": "08:00", "hours": 7.5 },
+      { "day": "Wed", "start": "08:00", "hours": 7.5 },
+      { "day": "Thu", "start": "08:00", "hours": 7.5 },
+      { "day": "Fri", "start": "08:00", "hours": 7 }
+    ],
+    "lunch": { "start": "12:00", "end": "12:30" },
+    "gapMinutes": 15
+  },
+  "aliases": {}
+}

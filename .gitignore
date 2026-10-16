@@ -1,0 +1,35 @@
+# Per-user skill config (e.g. skills/my-week/config.txt holds local folder paths)
+config.txt
+skills/*/config.json
+*.local.*
+
+# Claude Code local settings
+.claude/settings.local.json
+CLAUDE.local.md
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Logs and temp files
+*.log
+*.tmp
+tmp/
+recording-output/
+
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp

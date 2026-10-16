@@ -1,0 +1,20 @@
+{
+  "name": "renepoulsen",
+  "steps": [
+    { "goto": "https://renepoulsen.dk" },
+    { "wait": 1.5 },
+    { "hover": "a[href=\"#about\"]" },
+    { "wait": 0.6 },
+    { "scrollTo": "#about", "block": "top", "duration": 3 },
+    { "wait": 1.5 },
+    { "scrollTo": "#howiwork", "block": "top", "duration": 3 },
+    { "wait": 1.2 },
+    { "scrollTo": "#howiwork-header-0", "block": "center", "duration": 2.5 },
+    { "hover": "#howiwork-header-0" },
+    { "wait": 0.5 },
+    { "click": "#howiwork-header-0" },
+    { "wait": 2 },
+    { "scrollToBottom": true, "speed": 800 },
+    { "wait": 1.5 }
+  ]
+}
