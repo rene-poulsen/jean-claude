@@ -6,7 +6,7 @@ A collection of [Claude Code](https://claude.com/claude-code) skills, commands, 
 
 | Skill | What it does |
 | --- | --- |
-| [my-week](skills/my-week/README.md) | Lists every commit you made this week across your local git repos, grouped by repo. |
+| [my-week](skills/my-week/README.md) | Lists every commit you made this week across your local git repos, grouped by repo, with the Claude Code tokens and cost behind each commit. |
 | [plan-my-week](skills/plan-my-week/README.md) | Turns your WorkBook bookings into Outlook calendar events, placed around your existing meetings. Windows + classic Outlook. |
 | [4k-website-recording](skills/4k-website-recording/README.md) | Smooth 4K 60 fps screen recordings of websites (scrolling, hovering, clicking through pages) for showreels, portfolios and case videos. |
 | [lighthouse-test](skills/lighthouse-test/README.md) | Lighthouse test on mobile and desktop, with a report that traces each problem to your code and suggests fixes. |
