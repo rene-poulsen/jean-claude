@@ -1,5 +1,5 @@
 ---
-description: Move the current changes onto a fresh branch cut from development/develop/dev, commit them with a well-written message, push, open a pull request and show it in Chrome. Run as /feature-pr <what was fixed and why>.
+description: Move the current changes onto a fresh branch cut from development/develop/dev, commit them with a well-written message, push, open a pull request and show it in the browser. Run as /feature-pr <what was fixed and why>.
 argument-hint: <task description, e.g. "fix mobile view of the header because the menu overlaps the logo">
 disable-model-invocation: true
 ---
@@ -8,7 +8,7 @@ disable-model-invocation: true
 
 Task description from the user: **$ARGUMENTS**
 
-Take the uncommitted changes in the current repo, put them on a new branch based on the team's development branch, commit, push, open a PR and show it in Chrome. Running this command is the user's go-ahead to push and create the PR, so don't ask for confirmation unless something below says to stop.
+Take the uncommitted changes in the current repo, put them on a new branch based on the team's development branch, commit, push, open a PR and show it in the browser. Running this command is the user's go-ahead to push and create the PR, so don't ask for confirmation unless something below says to stop.
 
 ## 1. Inspect
 
@@ -90,11 +90,13 @@ EOF
 
 **Other hosts** (Bitbucket, GitLab): open the host's "create PR/MR" page for the branch and give the user the title and description to paste.
 
-## 7. Open in Chrome
+## 7. Open in the browser
 
-- **Windows**: `"/c/Program Files/Google/Chrome/Application/chrome.exe" "<pr url>" >/dev/null 2>&1 &`, or if that path doesn't exist, `powershell.exe -NoProfile -Command "Start-Process chrome '<pr url>'"`.
-- **macOS**: `open -a "Google Chrome" "<pr url>"`.
-- **Linux**: `google-chrome "<pr url>" >/dev/null 2>&1 &`, falling back to `xdg-open`.
+Open the PR URL in the default browser:
+
+- **Windows**: `powershell.exe -NoProfile -Command "Start-Process '<pr url>'"`
+- **macOS**: `open "<pr url>"`
+- **Linux**: `xdg-open "<pr url>" >/dev/null 2>&1 &`
 
 ## 8. Report
 
