@@ -13,6 +13,15 @@ A collection of [Claude Code](https://claude.com/claude-code) skills, commands, 
 
 Each skill's README explains what you need, how to set it up and how to use it.
 
+## Commands
+
+| Command | What it does |
+| --- | --- |
+| [feature-pr](commands/feature-pr.md) | `/feature-pr <what you fixed and why>` moves your uncommitted changes to a new branch off `development`/`develop`/`dev`, commits with a generated branch name and message, pushes, opens a PR and shows it in Chrome. Needs the [GitHub CLI](https://cli.github.com) for GitHub repos. |
+
+Copy a command's `.md` file to `~/.claude/commands/` (Windows: `C:\Users\<you>\.claude\commands\`) and
+start a new Claude Code session.
+
 ## Getting started
 
 1. Download this repo: `git clone https://github.com/rene-poulsen/jean-claude.git`, or use **Code >
