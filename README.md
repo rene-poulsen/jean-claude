@@ -19,6 +19,8 @@ Each skill's README explains what you need, how to set it up and how to use it.
 | --- | --- |
 | [feature-pr](commands/feature-pr.md) | `/feature-pr <what you fixed and why>` moves your uncommitted changes to a new branch off `development`/`develop`/`dev`, commits with a generated branch name and message, pushes, opens a PR and shows it in your default browser. Needs the [GitHub CLI](https://cli.github.com) for GitHub repos. |
 | [bug-pr](commands/bug-pr.md) | `/bug-pr <the bug and what caused it>` does the same for a bug fix: a `bugfix/` branch, a commit that explains symptom, cause and fix, and a PR with steps to reproduce and how to verify. Needs the [GitHub CLI](https://cli.github.com) for GitHub repos. |
+| [hotfix-pr](commands/hotfix-pr.md) | `/hotfix-pr <the bug and what caused it>` for urgent fixes to what's live: a `hotfix/` branch off `main`/`master`, a PR into production and a back-merge PR into `development`/`develop`/`dev` so the fix isn't lost at the next release. Needs the [GitHub CLI](https://cli.github.com) for GitHub repos. |
+| [release-pr](commands/release-pr.md) | `/release-pr [version]` opens (or updates) a PR from `development`/`develop`/`dev` into `main`/`master` with release notes built from the merged PRs, grouped into features, bug fixes and maintenance, plus deploy heads-ups (migrations, config, dependencies) and a suggested version. Needs the [GitHub CLI](https://cli.github.com) for GitHub repos. |
 
 Copy a command's `.md` file to `~/.claude/commands/` (Windows: `C:\Users\<you>\.claude\commands\`) and
 start a new Claude Code session.
