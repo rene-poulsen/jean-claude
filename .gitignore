@@ -1,6 +1,7 @@
 # Per-user skill config (e.g. skills/my-week/config.txt holds local folder paths)
 config.txt
 skills/*/config.json
+skills/*/state.json
 *.local.*
 
 # Claude Code local settings
