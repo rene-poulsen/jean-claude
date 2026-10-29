@@ -1,6 +1,7 @@
 ---
 name: plan-my-week
 description: Plan the user's coming work week - reads their resource bookings in WorkBook and adds matching job events to their Outlook calendar, placed around existing meetings. Use when they say /plan-my-week, "planlæg min uge", "plan my week", or ask to put their WorkBook bookings into Outlook.
+disable-model-invocation: true
 ---
 
 # Plan my week
