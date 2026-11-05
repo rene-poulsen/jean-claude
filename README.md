@@ -26,6 +26,14 @@ Each skill's README explains what you need, how to set it up and how to use it.
 Copy a command's `.md` file to `~/.claude/commands/` (Windows: `C:\Users\<you>\.claude\commands\`) and
 start a new Claude Code session.
 
+## Hooks
+
+| Hook | What it does |
+| --- | --- |
+| [terminal-title](hooks/terminal-title/README.md) | Sets the terminal window title to the GitHub repo (or folder) you're working in, plus the Jira key from your prompt (e.g. `jean-claude - RT-436`). |
+
+Each hook's README explains how to install it and wire it up in `settings.json`.
+
 ## Getting started
 
 1. Download this repo: `git clone https://github.com/rene-poulsen/jean-claude.git`, or use **Code >

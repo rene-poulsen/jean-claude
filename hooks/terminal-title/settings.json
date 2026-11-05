@@ -1,0 +1,19 @@
+{
+  "env": {
+    "CLAUDE_CODE_DISABLE_TERMINAL_TITLE": "1"
+  },
+  "hooks": {
+    "SessionStart": [
+      { "hooks": [{ "type": "command", "command": "node \"C:/Users/<you>/.claude/hooks/terminal-title/terminal-title.js\"", "timeout": 10 }] }
+    ],
+    "CwdChanged": [
+      { "hooks": [{ "type": "command", "command": "node \"C:/Users/<you>/.claude/hooks/terminal-title/terminal-title.js\"", "timeout": 10 }] }
+    ],
+    "UserPromptSubmit": [
+      { "hooks": [{ "type": "command", "command": "node \"C:/Users/<you>/.claude/hooks/terminal-title/terminal-title.js\"", "timeout": 10 }] }
+    ],
+    "Stop": [
+      { "hooks": [{ "type": "command", "command": "node \"C:/Users/<you>/.claude/hooks/terminal-title/terminal-title.js\"", "timeout": 10 }] }
+    ]
+  }
+}
