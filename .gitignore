@@ -34,3 +34,6 @@ desktop.ini
 .vscode/
 .idea/
 *.swp
+
+# Hook runtime state
+hooks/*/.title-state/
